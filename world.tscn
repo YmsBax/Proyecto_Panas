@@ -1,6 +1,4 @@
-[gd_scene load_steps=4 format=3 uid="uid://rqii5rqxfr51"]
-
-[ext_resource type="PackedScene" uid="uid://s8a1qjdctxli" path="res://Player.tscn" id="1_f3sb7"]
+[gd_scene load_steps=3 format=3 uid="uid://rqii5rqxfr51"]
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_gv5m4"]
 
@@ -25,6 +23,3 @@ position = Vector2(1, -1)
 scale = Vector2(1.01407, 1)
 shape = SubResource("RectangleShape2D_f3sb7")
 debug_color = Color(0.241903, 0.632794, 0.199413, 0.42)
-
-[node name="Node2D" parent="." instance=ExtResource("1_f3sb7")]
-position = Vector2(-26, 383)
