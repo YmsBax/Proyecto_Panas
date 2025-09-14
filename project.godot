@@ -12,7 +12,7 @@ config_version=5
 
 config/name="Proyecto2D"
 run/main_scene="res://Escenas/world.tscn"
-config/features=PackedStringArray("4.2", "Forward Plus")
+config/features=PackedStringArray("4.4", "Forward Plus")
 config/icon="res://icon.svg"
 "<<<<<<<HEAD[audio]buses/default_bus_layout"=""
 
@@ -25,3 +25,7 @@ buses/default_bus_layout=""
 folder_colors={
 "res://Recuros Sonoros/": "orange"
 }
+
+[rendering]
+
+textures/canvas_textures/default_texture_filter=0
