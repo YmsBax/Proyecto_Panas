@@ -14,3 +14,13 @@ config/name="Proyecto2D"
 run/main_scene="uid://rqii5rqxfr51"
 config/features=PackedStringArray("4.4", "Forward Plus")
 config/icon="res://icon.svg"
+
+[audio]
+
+buses/default_bus_layout=""
+
+[file_customization]
+
+folder_colors={
+"res://Recuros Sonoros/": "orange"
+}
