@@ -15,3 +15,8 @@ texture = ExtResource("1_nqb74")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, 2)
 shape = SubResource("RectangleShape2D_eeb8t")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position_smoothing_enabled = true
+drag_vertical_enabled = true
+drag_vertical_offset = -0.94
