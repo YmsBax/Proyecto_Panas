@@ -18,8 +18,10 @@ sources/0 = SubResource("TileSetAtlasSource_0ftt8")
 [node name="Mapeado" type="Node2D"]
 
 [node name="ColorRect" type="ColorRect" parent="."]
-offset_right = 1148.0
-offset_bottom = 717.0
+offset_left = 334.0
+offset_top = 226.0
+offset_right = 813.0
+offset_bottom = 495.0
 color = Color(0.027451, 1, 1, 1)
 
 [node name="CharacterBody2D" parent="." instance=ExtResource("1_nl5h6")]
