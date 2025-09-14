@@ -2,20 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-<<<<<<< HEAD
-uid="uid://o282fhgu52p1"
-=======
-uid="uid://bb1kwqa5hh4mf"
->>>>>>> b23b6ad7459507c7ef31fdd194672b6971c4718c
-path="res://.godot/imported/tilemap.png-3dbbb86a792df67c64d2edab0f6561db.ctex"
+uid="uid://bg17rskqp4y3e"
+path="res://.godot/imported/idle-Sheet.png-f22bd0914e3330b4f99a47ac6ec70dc5.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://RecursosVisuales/tilemap.png"
-dest_files=["res://.godot/imported/tilemap.png-3dbbb86a792df67c64d2edab0f6561db.ctex"]
+source_file="res://RecursosVisuales/idle-Sheet.png"
+dest_files=["res://.godot/imported/idle-Sheet.png-f22bd0914e3330b4f99a47ac6ec70dc5.ctex"]
 
 [params]
 

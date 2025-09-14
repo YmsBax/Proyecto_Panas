@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://bjayl7uqdder8"]
+
+[ext_resource type="Texture2D" uid="uid://bg17rskqp4y3e" path="res://RecursosVisuales/idle-Sheet.png" id="1_nqb74"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_eeb8t"]
+size = Vector2(6, 12)
+
+[node name="CharacterBody2D" type="CharacterBody2D"]
+position = Vector2(-45, 342)
+metadata/_edit_group_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_nqb74")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 2)
+shape = SubResource("RectangleShape2D_eeb8t")
