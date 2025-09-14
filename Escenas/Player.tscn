@@ -1,22 +1,87 @@
-[gd_scene load_steps=3 format=3 uid="uid://bjayl7uqdder8"]
+[gd_scene load_steps=12 format=3 uid="uid://bjayl7uqdder8"]
 
 [ext_resource type="Texture2D" uid="uid://bg17rskqp4y3e" path="res://RecursosVisuales/idle-Sheet.png" id="1_nqb74"]
+[ext_resource type="Script" uid="uid://dthcrg0vy0350" path="res://Escenas/player.gd" id="1_wwpud"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_eeb8t"]
 size = Vector2(6, 12)
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_5hhfp"]
+atlas = ExtResource("1_nqb74")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kwdw2"]
+atlas = ExtResource("1_nqb74")
+region = Rect2(16, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_j2dk4"]
+atlas = ExtResource("1_nqb74")
+region = Rect2(32, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_urfe6"]
+atlas = ExtResource("1_nqb74")
+region = Rect2(48, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mok4h"]
+atlas = ExtResource("1_nqb74")
+region = Rect2(64, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_t27sq"]
+atlas = ExtResource("1_nqb74")
+region = Rect2(80, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3tm5s"]
+atlas = ExtResource("1_nqb74")
+region = Rect2(96, 0, 16, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_qoh2p"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5hhfp")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kwdw2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_j2dk4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_urfe6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mok4h")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_t27sq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3tm5s")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}]
+
 [node name="CharacterBody2D" type="CharacterBody2D"]
 position = Vector2(-45, 342)
+script = ExtResource("1_wwpud")
 metadata/_edit_group_ = true
-
-[node name="Sprite2D" type="Sprite2D" parent="."]
-texture = ExtResource("1_nqb74")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, 2)
 shape = SubResource("RectangleShape2D_eeb8t")
 
 [node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(100, -25)
+zoom = Vector2(1.5, 1.5)
 position_smoothing_enabled = true
 drag_vertical_enabled = true
-drag_vertical_offset = -0.94
+drag_horizontal_offset = -0.16
+drag_vertical_offset = -1.0
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_qoh2p")
+animation = &"idle"
+frame = 4
+frame_progress = 0.0415679
